@@ -276,4 +276,14 @@ class Engine
     {
         return $this->make($name)->render($data);
     }
+    
+    /**
+     * Check if a template folder exists.
+     * @param  string  $name
+     * @return boolean
+     */
+    public function existsFolder($name)
+    {
+        return $this->folders->exists($name);
+    }    
 }
