@@ -343,4 +343,13 @@ class Template
     {
         return $this->escape($string, $functions);
     }
+    
+    /**
+     * @param $obj
+     * @return mixed
+     */
+    public function get($obj)
+    {
+        return $obj;
+    }
 }
